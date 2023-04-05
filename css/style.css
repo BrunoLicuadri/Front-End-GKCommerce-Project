@@ -45,3 +45,36 @@ nav {
 .mb20 {
     margin-bottom: 20px;
 }
+
+
+.btn {
+    height: 42px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: #3483FA;
+    color: #fff;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #3483FA;
+    border: 1px solid #3483FA;
+}
+
+.btn-container {
+    width: 220px;
+    display: grid;
+    grid-gap:20px;
+}
+
+.line-bottom {
+    border-bottom: 1px solid #d9d9d9;
+}
