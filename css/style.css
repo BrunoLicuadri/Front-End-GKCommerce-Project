@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+:root{
+    --gk-color-bg-primary: #e8e8e8;
+    --gk-color-bg-secondary: #ffe500;
+    --gk-color-bg-terciary: #636363;
+
+    --gk-color-card-bg: #fff;
+    --gk-color-card-bg-border: #d9d9d9;
+
+    --gk-color-btn-primary: #3483fa;
+    --gk-color-btn-inverse: #fff;
+
+    --gk-color-font-primary: #636363;
+    --gk-color-font-secondary: #0caf1d;
+    --gk-color-font-tertiary: #fff;
+}
+
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -8,7 +25,7 @@
 }
 
 html, body {
-    background-color: #E8E8E8;
+    background-color: var(--gk-color-bg-primary);
 }
 
 a, a:hover {
@@ -17,7 +34,7 @@ a, a:hover {
 }
 
 header {
-    background-color: #FFE500;
+    background-color: var(--gk-color-bg-secondary);
     height: 70px;
     display: flex;
     align-items: center;
@@ -27,27 +44,27 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #636363;
+    color: var(--gk-color-font-primary);
 }
 
-.container {
+.gkc-container {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
 }
 
-.card {
-    background-color: #fff;
+.gkc-card {
+    background-color: var(--gk-color-card-bg);
     border-radius: 4px;
-    border: 1px solid #D9D9D9;
+    border: 1px solid var(--gk-color-card-bg-border);
 }
 
-.mb20 {
+.gkc-mb20 {
     margin-bottom: 20px;
 }
 
 
-.btn {
+.gkc-btn {
     height: 42px;
     border-radius: 4px;
     font-size: 16px;
@@ -58,23 +75,23 @@ nav {
     cursor: pointer;
 }
 
-.btn-blue {
-    background-color: #3483FA;
-    color: #fff;
+.gkc-btn-blue {
+    background-color: var(--gk-color-btn-primary);
+    color: var(--gk-color-btn-inverse);
 }
 
-.btn-white {
-    background-color: #fff;
-    color: #3483FA;
-    border: 1px solid #3483FA;
+.gkc-btn-white {
+    background-color: var(--gk-color-btn-inverse);
+    color: var(--gk-color-btn-primary);
+    border: 1px solid var(--gk-color-btn-primary);
 }
 
-.btn-container {
+.gkc-btn-container {
     width: 220px;
     display: grid;
     grid-gap:20px;
 }
 
-.line-bottom {
-    border-bottom: 1px solid #d9d9d9;
+.gkc-line-bottom {
+    border-bottom: 1px solid var(--gk-color-card-bg-border);
 }
