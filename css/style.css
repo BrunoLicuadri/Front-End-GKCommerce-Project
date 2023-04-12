@@ -14,6 +14,7 @@
     --gk-color-font-primary: #636363;
     --gk-color-font-secondary: #0caf1d;
     --gk-color-font-tertiary: #fff;
+    --gk-color-font-quarternary: #f33;
 
     --gk-color-font-placeholder: #d9d9d9;
 }
@@ -104,6 +105,7 @@ nav h1{
 /* BUTTOM STYLEs */
 
 .gkc-btn {
+    width: 100%;
     height: 42px;
     border-radius: 4px;
     font-size: 16px;
@@ -117,6 +119,7 @@ nav h1{
 .gkc-btn-blue {
     background-color: var(--gk-color-btn-primary);
     color: var(--gk-color-btn-inverse);
+    border: none;
 }
 
 .gkc-btn-white {
@@ -193,4 +196,62 @@ nav h1{
 
 .gkc-search-bar input::placeholder {
     color: var(--gk-color-font-placeholder);
+}
+
+/*---------------------------------------------------------------------------------*/
+/* FORM STYLEs */
+
+.gkc-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.gkc-form h2{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gk-color-font-primary);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.gkc-form-control {
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    color: var(--gk-color-font-primary);
+    font-size: 16px;
+    border: 1px solid var(--gk-color-card-bg-border);
+    border-radius: 4px;
+}
+
+.gkc-form-control::placeholder {
+    color: var(--gk-color-font-placeholder);
+}
+
+.gkc-form-control:focus{
+   outline: none;
+}
+
+@media (min-width: 576px){
+    .gkc-form h2{
+        font-size: 24px;
+    }
+
+    #login-section {
+        padding: 40px 0;
+    }
+}
+
+.gkc-form-error {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--gk-color-font-quarternary);
+    padding-left: 4px;
+}
+
+.gkc-input-error{
+    border: 1px solid var(--gk-color-font-quarternary);
 }
