@@ -15,7 +15,7 @@
 }
 
 .gkc-product-detail-bottom {
-    padding: 10px 20px 20px 20px;
+    padding: 10px 20px ;
 }
 
 .gkc-product-detail-bottom h3 {
@@ -41,7 +41,6 @@
     background-color: var(--gk-color-bg-terciary);
     color: var(--gk-color-font-tertiary);
     height: 30px;
-    width: 107px;
     font-size: 12px;
     font-weight: 700px;
     border-radius: 4px;
@@ -49,9 +48,11 @@
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 .gkc-category-container {
     display: flex;
     padding: 0px 20px 20px 20px;
+    flex-wrap: wrap;
 }

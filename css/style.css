@@ -23,6 +23,9 @@
     margin: 0;
     font-family: 'Open Sans';
 }
+header{
+    padding: 20px;
+}
 
 html, body {
     background-color: var(--gk-color-bg-primary);
@@ -32,6 +35,13 @@ a, a:hover {
     text-decoration: none;
     color: unset;
 }
+
+main {
+    padding: 0 20px;
+}
+
+/*---------------------------------------------------------------------------------*/
+/* HEADER STYLEs */
 
 header {
     background-color: var(--gk-color-bg-secondary);
@@ -47,11 +57,31 @@ nav {
     color: var(--gk-color-font-primary);
 }
 
+nav a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+nav h1{
+    font-size: 24px;
+}
+
+/*---------------------------------------------------------------------------------*/
+/* GENERICs STYLEs */
+
 .gkc-container {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
 }
+
+.gkc-line-bottom {
+    border-bottom: 1px solid var(--gk-color-card-bg-border);
+}
+
+
+/*---------------------------------------------------------------------------------*/
+/* CARD STYLEs */
 
 .gkc-card {
     background-color: var(--gk-color-card-bg);
@@ -63,6 +93,9 @@ nav {
     margin-bottom: 20px;
 }
 
+
+/*---------------------------------------------------------------------------------*/
+/* BUTTOM STYLEs */
 
 .gkc-btn {
     height: 42px;
@@ -87,11 +120,15 @@ nav {
 }
 
 .gkc-btn-container {
-    width: 220px;
+    width: 100%;
     display: grid;
     grid-gap:20px;
 }
 
-.gkc-line-bottom {
-    border-bottom: 1px solid var(--gk-color-card-bg-border);
+@media (min-width: 576px) {
+    .gkc-btn-container {
+       width: 220px;
+    }
+    
 }
+
