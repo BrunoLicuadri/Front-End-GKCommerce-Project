@@ -14,7 +14,8 @@
     --gk-color-font-primary: #636363;
     --gk-color-font-secondary: #0caf1d;
     --gk-color-font-tertiary: #fff;
-    --gk-color-font-quarternary: #f33;
+
+    --gk-color-error: #f33;
 
     --gk-color-font-placeholder: #d9d9d9;
 }
@@ -226,6 +227,13 @@ nav h1{
     text-align: center;
 }
 
+.gkc-form-controls-container {
+    display: grid;
+    grid-gap: 20px;
+    margin: 20px 0;
+    width: 100%;
+}
+
 
 .gkc-form-control {
     width: 100%;
@@ -249,19 +257,33 @@ nav h1{
     .gkc-form h2{
         font-size: 24px;
     }
-
-    #login-section {
-        padding: 40px 0;
-    }
 }
 
 .gkc-form-error {
     font-size: 12px;
     font-weight: 400;
-    color: var(--gk-color-font-quarternary);
+    color: var(--gk-color-error);
     padding-left: 4px;
 }
 
 .gkc-input-error{
-    border: 1px solid var(--gk-color-font-quarternary);
+    border: 1px solid var(--gk-color-error);
+}
+
+.gkc-select:invalid{
+    color: var(--gk-color-font-placeholder);
+}
+
+.gkc-select option[disabled]{
+    display: none;
+}
+
+.gkc-select option {
+    color: var(--gk-color-font-primary);
+}
+
+.gkc-textarea {
+    resize: none;
+    height: 128px;
+    padding-top: 10px;
 }

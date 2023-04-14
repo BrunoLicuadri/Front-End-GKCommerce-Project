@@ -10,17 +10,14 @@
     margin: 0 auto;
 }
 
-
-
-.gkc-form-controls-container {
-    display: grid;
-    grid-gap: 20px;
-    margin: 20px 0;
+.gkc-login-form-btn {
     width: 100%;
 }
 
-.gkc-login-form-btn {
-    width: 100%;
+@media (min-width: 576px){
+    #login-section {
+        padding: 40px 0;
+    }
 }
 
 

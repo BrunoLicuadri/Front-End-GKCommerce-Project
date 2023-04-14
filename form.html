@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GKCommerce</title>
+    <link rel="stylesheet" href="css/product-form.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="gkc-container">
+        <h1>GKCommerce</h1>
+        <div class="gkc-logged-user">
+          <p>Maria da Silva</p>
+          <a href="#">Sair</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="product-form-section" class="gkc-container">
+        <div class="gkc-product-form-container">
+          <form class="gkc-card gkc-form">
+            <h2>Dados do Produto</h2>
+
+            <div class="gkc-form-controls-container">
+              <div>
+                <input class="gkc-form-control" type="text" placeholder="Nome"/>
+              </div>
+              <div>
+                <input class="gkc-form-control" type="text" placeholder="Preço"/>
+              </div>
+              <div>
+                <input class="gkc-form-control" type="text" placeholder="Imagem"/>
+              </div>
+
+              <div>
+                <select class="gkc-form-control gkc-select" required>
+                  <option value="" disabled selected>Categoria</option>
+                  <option value="1">Valor 1</option>
+                  <option value="2">Valor 2</option>
+                </select>
+              </div>
+
+              <div>
+                <textarea class="gkc-form-control gkc-textarea" placeholder="Descrição"></textarea>
+              </div>
+
+
+              
+            </div>
+
+            <div class="gkc-product-form-btn">
+              <button type="submit" class="gkc-btn gkc-btn-blue">Entrar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
