@@ -1,0 +1,10 @@
+@import url("style.css");
+
+#product-listing-section {
+    padding: 20px 0;
+}
+
+.gkc-product-listing-img {
+    height: 69px;
+    width: 69px;
+}

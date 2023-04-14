@@ -93,6 +93,12 @@ nav h1{
     border-bottom: 1px solid var(--gk-color-card-bg-border);
 }
 
+.gkc-section-title {
+    text-align: center;
+    color: var(--gk-color-font-primary);
+    font-size: 16px;
+}
+
 
 /*---------------------------------------------------------------------------------*/
 /* CARD STYLEs */
@@ -286,4 +292,22 @@ nav h1{
     resize: none;
     height: 128px;
     padding-top: 10px;
+}
+
+
+/*---------------------------------------------------------------------------------*/
+/* TABLE STYLEs */
+
+.gkc-table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.gkc-table thead {
+    background-color: var(--gk-color-card-bg);
+}
+
+.gkc-table tbody {
+    background-color: var(--gk-color-card-bg);
 }
